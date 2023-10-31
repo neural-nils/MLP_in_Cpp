@@ -401,7 +401,7 @@ int main()
     for (int e = 0; e < epochs; ++e)
     {
         printf("epoch %d\n", e);    
-        DataLoader trainData("MNIST/raw/train-images-idx3-ubyte", "MNIST/raw/train-labels-idx1-ubyte");
+        DataLoader trainData("MNIST/train-images-idx3-ubyte", "MNIST/train-labels-idx1-ubyte");
         //trainData.printHeaderInformation();
         int count = 0; 
         int correct = 0;     
@@ -451,7 +451,7 @@ int main()
 
     
     printf("Evaluating test set...\n");
-    DataLoader testData("MNIST/raw/t10k-images-idx3-ubyte", "MNIST/raw/t10k-labels-idx1-ubyte");
+    DataLoader testData("MNIST/t10k-images-idx3-ubyte", "MNIST/t10k-labels-idx1-ubyte");
 
     int count = 0; 
     int correct = 0;     
