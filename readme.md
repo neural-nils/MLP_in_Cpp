@@ -97,6 +97,7 @@ However, it is amazing that it also works like this, and it clarifies the concep
 The forward propagation is handled by this function. Note, that there is a forward_prop function on the net level, and one on the neuron level. The first layer needs to be set to the input bytes. The forward propagation is then starting from the first hidden layer. The last layer needs to be handled separately again, as the softmax function relies on having the activations of each neurons.
 
 ~~~cpp
+
 void forward_prop(const std::vector<double>& input)
     {
         for (int i = 0; i < input.size(); ++i)
@@ -284,9 +285,13 @@ If there are any questions or improvements, don't hesitate to ask me.
 
 
 
-###References
+### References
 
 <a id="1">[1]<a/> http://yann.lecun.com/exdb/mnist/
+
 <a id="2">[2]<a/> https://vimeo.com/19569529
+
 <a id="3">[3]<a/> https://developer.ibm.com/articles/au-endianc/
+
 <a id="4">[4]<a/> "Sparks of AGI: early experiments with GPT-4", https://www.youtube.com/watch?v=qbIk7-JPB2c
+
