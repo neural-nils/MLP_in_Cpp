@@ -1,8 +1,8 @@
 
 
-##Multi-Layer Perceptron (MLP) from scratch in C++
+## Multi-Layer Perceptron (MLP) from scratch in C++
 
-###Introduction
+### Introduction
 
 Hi everyone, 
 
@@ -28,7 +28,7 @@ This code is for educational purposes. In industrial settings you would not crea
 <br>
 
 
-#####How does the MNIST data look like?
+##### How does the MNIST data look like?
 I think a short look at the byte-level can help a lot.
 As outlined on Yann LeCun's website [[1]](1), the training image dataset is a single binary file, that consists of a header with four 32-bit integers:
  - a magic number: 2051
@@ -123,7 +123,7 @@ void forward_prop(const std::vector<double>& input)
 ~~~
 <br>
 
-####Activation Functions
+#### Activation Functions
  
 You might try different activation functions. As a default I set it to the relu function, which is commonly used, but feel free to go into the code and uncomment the sigmoid or tanh. Of course only one function can be active, and you should make sure, that the activation function and its derivative corresponds.
 
@@ -150,7 +150,7 @@ Layer 2 -> N0,N1,N2,N3,N4,N5,N6,N7,N8,N9,
 
 <br><br>
 
-#####The Softmax Function
+##### The Softmax Function
 
 Another interesting part is the softmax function applied on the outputs of the last layers:
 
@@ -188,7 +188,7 @@ void get_softmax_y_hat(std::vector<double>& y_hat)
     }
 ~~~
 
-####The Loss
+#### The Loss
 
 The next function is at the heart of the learning process. It takes y_hat (the prediction) and compares it to y (the truth) and then calculates the loss. As more the output deviates from the correct value, as higher the loss will be. Convergence, or learning of the network can be evaluated by looking whether the loss get's smaller over time.
 
@@ -236,7 +236,7 @@ double calculate_gradients(std::vector<double>& y, std::vector<double>& y_hat){
 
 <br>
 
-####Backpropagation
+#### Backpropagation
 
 Once the gradients are obtained, we can do the actual backpropagation and update the weights. 
 
@@ -266,7 +266,7 @@ void backprop(double alpha)
 
 <br>
 
-####Summary
+#### Summary
 
 The above code snippets highlight some of the concepts in the MLP. 
 As soon, as I got over a certain level, I hated incomplete tutorials with low information density and often times the core parts were missing.
