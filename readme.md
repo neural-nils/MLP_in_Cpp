@@ -156,6 +156,7 @@ Layer 2 -> N0,N1,N2,N3,N4,N5,N6,N7,N8,N9,
 Another interesting part is the softmax function applied on the outputs of the last layers:
 
 \[ softmax = \frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}} \]
+\[ \]
 
 
 What does it do?
