@@ -158,7 +158,7 @@ Another interesting part is the softmax function applied on the outputs of the l
 
 <!-- \[ softmax = \frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}} \] -->
 <!-- \[ \] -->
-![softmax equation](images/softmax.png)
+![softmax equation](images/softmax.jpg)
 
 
 What does it do?
