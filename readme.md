@@ -63,7 +63,7 @@ Most of the chars are actually 0x00 (which is the black background), therefore, 
 
 raw bytes                     | without 0x00
 :-----------:|:-----------:
-![](mnist_image.png) | ![](mnist_image2.png)
+![](images/mnist_image.png) | ![](images/mnist_image2.png)
 
 To test the program, simply download the code, and compile it with: 
 ~~~console
