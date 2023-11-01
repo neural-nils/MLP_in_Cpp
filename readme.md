@@ -76,7 +76,7 @@ Then exectue it with:
 ~~~
 
 Initially I was thinking to also provide a command line parser for the topology of the MLP, but as this is an educational project, feel free to just go into the code, change the topology to whatever you like, compile again, and start again. You can also adjust the epochs, meaning how often you want to go through the entire dataset, before running on the testset:
-    
+
 Directly below main(), you find:
 ~~~cpp
 std::vector<int>topology{28*28, 250, 10}; 
@@ -87,12 +87,13 @@ This will create 3 layers with 784 input neurons, 250 hidden neurons, and 10 out
 
 As a starting point: a hidden layer of 250 neurons already works decently well. With a hidden layer size of 1000 neurons, I got to an accuracy of >0.90 %.
 
-####The Net
+#### The Net
+
 The logic of the MLP in this project is divided between the Net class that organizes the layers, and the Neuron class that handles individual neurons. 
 This is obviously very inefficient, as you could implement the entire logic in a vectorized form.
 However, it is amazing that it also works like this, and it clarifies the concept very good.
 
-####Feed Forward
+#### Feed Forward
 
 The forward propagation is handled by this function. Note, that there is a forward_prop function on the net level, and one on the neuron level. The first layer needs to be set to the input bytes. The forward propagation is then starting from the first hidden layer. The last layer needs to be handled separately again, as the softmax function relies on having the activations of each neurons.
 
@@ -155,8 +156,9 @@ Layer 2 -> N0,N1,N2,N3,N4,N5,N6,N7,N8,N9,
 
 Another interesting part is the softmax function applied on the outputs of the last layers:
 
-\[ softmax = \frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}} \]
-\[ \]
+<!-- \[ softmax = \frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}} \] -->
+<!-- \[ \] -->
+![softmax equation](images/softmax.png)
 
 
 What does it do?
