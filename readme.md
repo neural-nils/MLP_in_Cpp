@@ -10,7 +10,7 @@ What is the <b>"Hello World!"</b> program of neural networks? I think it is defi
 
 When I got into machine learning, I just wanted to see how to code an MLP from scratch in C++. It proofed to be quite difficult to find a tutorial that provides that.
 
-Back than, David Millers tutorial [[^2]](2) was the only resource for beginners I could find, and has been the inpiration for this MLP. I also follow most of his naming conventions here.
+Back than, David Millers tutorial [[2]](#references) was the only resource for beginners I could find, and has been the inpiration for this MLP. I also follow most of his naming conventions here.
 
 Although I think it is a great tutorial, David makes the neural network learn the XOR function, with only a single output neuron. 
 In my opinion this task is a bit too basic to really understand what is going on in neural networks.
@@ -30,7 +30,7 @@ This code is for educational purposes. In industrial settings you would not crea
 
 ##### How does the MNIST data look like?
 I think a short look at the byte-level can help a lot.
-As outlined on Yann LeCun's website [[1]](1), the training image dataset is a single binary file, that consists of a header with four 32-bit integers:
+As outlined on Yann LeCun's website [[1]](#references), the training image dataset is a single binary file, that consists of a header with four 32-bit integers:
  - a magic number: 2051
  - number of images: 60000
  - px per row: 28
@@ -41,7 +41,7 @@ The label file consists only of
  - the number of labels: 60000
 
 
-The 32-bit integers are stored in four bytes in big-endian byte order. E.g. 00 00 08 03 encode the magic number 2051 in big-endian. These bytes need to be flipped from big-endian to little-endian so that we can read them with our machine (IBM provides some good resources on byte shifts [[3]](3)):
+The 32-bit integers are stored in four bytes in big-endian byte order. E.g. 00 00 08 03 encode the magic number 2051 in big-endian. These bytes need to be flipped from big-endian to little-endian so that we can read them with our machine (IBM provides some good resources on byte shifts [[3]](#references)):
 
 ~~~cpp
 int reverseInt (int i)
@@ -158,7 +158,9 @@ Another interesting part is the softmax function applied on the outputs of the l
 
 <!-- \[ softmax = \frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}} \] -->
 <!-- \[ \] -->
-![softmax equation](images/softmax.jpg)
+
+
+$$\ softmax = \frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}} $$
 
 
 What does it do?
@@ -197,7 +199,7 @@ void get_softmax_y_hat(std::vector<double>& y_hat)
 The next function is at the heart of the learning process. It takes y_hat (the prediction) and compares it to y (the truth) and then calculates the loss. As more the output deviates from the correct value, as higher the loss will be. Convergence, or learning of the network can be evaluated by looking whether the loss get's smaller over time.
 
 > *Some Philosophical Thoughts*
-The loss is probably the most important value of neural networks and it is also the reason why I am currently a bit sceptical that GPT-4 is indeed exhibiting early forms of sentience (although I don't exclude that possibility), like hypothesized by a Microsoft researcher[[4]](4)... can sentience really be obtained when it's about the reduction of a single number? I don't know the answer, but intuitively I guess some fairy dust is still needed to breath life to neural networks (this might happen sooner than we think, though).
+The loss is probably the most important value of neural networks and it is also the reason why I am currently a bit sceptical that GPT-4 is indeed exhibiting early forms of sentience (although I don't exclude that possibility), like hypothesized by a Microsoft researcher[[4]](#references)... can sentience really be obtained when it's about the reduction of a single number? I don't know the answer, but intuitively I guess some fairy dust is still needed to breath life to neural networks (this might happen sooner than we think, though).
 
 The loss value is a very important diagnostic value, because it means that the neural network converges.
 
@@ -290,7 +292,7 @@ If there are any questions or improvements, don't hesitate to ask me.
 
 ### References
 
-<a id="1">[^1]<a/> http://yann.lecun.com/exdb/mnist/
+<a id="1">[1]<a/> http://yann.lecun.com/exdb/mnist/
 
 <a id="2">[2]<a/> https://vimeo.com/19569529
 
