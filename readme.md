@@ -18,7 +18,7 @@ I also found the organization of the network partly confusing, as weights and bi
 
 Taking these considerations into account, I wanted to code an MLP to learn the MNIST dataset.
 
-I will currently not make a full tutorial out of this, but rather discuss some highlights. Feel free to email me (neural-nils (at) gmail.com) if I shall dive deeper into it.
+I will currently not make a full tutorial out of this, but rather discuss some highlights. Feel free to email me (neural.nils (at) gmail.com) if I shall dive deeper into it.
 
 <br>
 
