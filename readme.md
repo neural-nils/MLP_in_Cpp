@@ -6,7 +6,7 @@
 
 Hi everyone, 
 
-What is the <b>"Hello World!"</b> program of neural networks? I think it is definitely a neural network that learns the MNIST dataset [[1]](1).
+What is the <b>"Hello World!"</b> program of neural networks? I think it is definitely a neural network that learns the MNIST dataset [[1]](#references).
 
 When I got into machine learning, I just wanted to see how to code an MLP from scratch in C++. It proofed to be quite difficult to find a tutorial that provides that.
 
@@ -160,7 +160,9 @@ Another interesting part is the softmax function applied on the outputs of the l
 <!-- \[ \] -->
 
 
-$$\ softmax = \frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}} $$
+$$
+\text{softmax} = \frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}} 
+$$
 
 
 What does it do?
