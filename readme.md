@@ -10,7 +10,7 @@ What is the <b>"Hello World!"</b> program of neural networks? I think it is defi
 
 When I got into machine learning, I just wanted to see how to code an MLP from scratch in C++. It proofed to be quite difficult to find a tutorial that provides that.
 
-Back than, David Millers tutorial [[2]](2) was the only resource for beginners I could find, and has been the inpiration for this MLP. I also follow most of his naming conventions here.
+Back than, David Millers tutorial [[^2]](2) was the only resource for beginners I could find, and has been the inpiration for this MLP. I also follow most of his naming conventions here.
 
 Although I think it is a great tutorial, David makes the neural network learn the XOR function, with only a single output neuron. 
 In my opinion this task is a bit too basic to really understand what is going on in neural networks.
@@ -290,7 +290,7 @@ If there are any questions or improvements, don't hesitate to ask me.
 
 ### References
 
-<a id="1">[1]<a/> http://yann.lecun.com/exdb/mnist/
+<a id="1">[^1]<a/> http://yann.lecun.com/exdb/mnist/
 
 <a id="2">[2]<a/> https://vimeo.com/19569529
 
