@@ -164,6 +164,15 @@ $$
 \text{softmax} = \frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}} 
 $$
 
+'''math
+\text{softmax} = \frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}}
+'''
+
+~~~math
+\text{softmax} = \frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}}
+~~~
+
+
 
 What does it do?
 Imagine the 10 output neurons have the following activations after a single run of forward propagation: 
