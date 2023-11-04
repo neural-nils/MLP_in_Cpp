@@ -164,6 +164,12 @@ $$
 \text{softmax} = \left( \frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}} \right)
 $$
 
+$\text{softmax} = \frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}}$
+
+\[ softmax = \frac{e^{z_i}}{\displaystyle\sum_{j=1}^{K}e^{z_j}} \]
+
+
+
 '''math
 \text{softmax} = \frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}}
 '''
