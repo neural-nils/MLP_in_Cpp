@@ -161,7 +161,7 @@ Another interesting part is the softmax function applied on the outputs of the l
 
 
 $$
-\text{softmax} = \left( \frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}} \right)
+\text{softmax} = \left( \frac{e^{z_i}}{ \sum_{j=1}^{K} e^{z_j}} \right)
 $$
 
 $\text{softmax} = \frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}}$
