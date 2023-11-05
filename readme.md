@@ -70,7 +70,7 @@ To test the program, simply download the code, and compile it with:
 g++ mlp.cpp -o mlp
 ~~~
 
-Then exectue it with:
+Then execute it with:
 ~~~console
 ./mlp
 ~~~
@@ -160,25 +160,7 @@ Another interesting part is the softmax function applied on the outputs of the l
 <!-- \[ \] -->
 
 
-$$
-\text{softmax} = \left( \frac{e^{z_i}}{ \sum_ {j=1} ^ {K} e^{z_j}} \right)
-$$
-
-$\text{softmax} = \frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}}$
-
-\[ softmax = \frac{e^{z_i}}{\displaystyle\sum_{j=1}^{K}e^{z_j}} \]
-
-
-
-'''math
-\text{softmax} = \frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}}
-'''
-
-~~~math
-\text{softmax} = \frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}}
-~~~
-
-
+<!-- ![softmax function](image/softmax.jpg){: .center-image } -->
 
 
 What does it do?
