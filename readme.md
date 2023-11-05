@@ -163,6 +163,12 @@ Another interesting part is the softmax function applied on the outputs of the l
 <!-- ![softmax function](image/softmax.jpg){: .center-image } -->
 $$\ softmax = \frac{(e^{z_i})}{(\sum_{j=1}^K e^{z_j})} $$
 
+
+<div class="display">
+\[ softmax = \frac{(e^{z_i})}{(\sum_{j=1}^K e^{z_j})} \]
+<\div>
+
+
 What does it do?
 Imagine the 10 output neurons have the following activations after a single run of forward propagation: 
 ~~~console
