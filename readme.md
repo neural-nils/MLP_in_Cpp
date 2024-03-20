@@ -199,9 +199,6 @@ void get_softmax_y_hat(std::vector<double>& y_hat)
 
 The next function is at the heart of the learning process. It takes y_hat (the prediction) and compares it to y (the truth) and then calculates the loss. As more the output deviates from the correct value, as higher the loss will be. Convergence, or learning of the network can be evaluated by looking whether the loss get's smaller over time.
 
-> *Some Philosophical Thoughts*
-The loss is probably the most important value of neural networks and it is also the reason why I am currently a bit sceptical that GPT-4 is indeed exhibiting early forms of sentience (although I don't exclude that possibility), like hypothesized by a Microsoft researcher[[4]](#references)... can sentience really be obtained when it's about the reduction of a single number? I don't know the answer, but intuitively I guess some fairy dust is still needed to breath life to neural networks (this might happen sooner than we think, though).
-
 The loss value is a very important diagnostic value, because it means that the neural network converges.
 
 After calculating the loss it is then backpropagated into the layers by utilizing the chain rule of calculus.
@@ -298,6 +295,3 @@ If there are any questions or improvements, don't hesitate to ask me.
 <a id="2">[2]<a/> https://vimeo.com/19569529
 
 <a id="3">[3]<a/> https://developer.ibm.com/articles/au-endianc/
-
-<a id="4">[4]<a/> "Sparks of AGI: early experiments with GPT-4", https://www.youtube.com/watch?v=qbIk7-JPB2c
-
